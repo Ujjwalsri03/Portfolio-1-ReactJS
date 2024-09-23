@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { MdMenu } from "react-icons/md";
 import { IoIosCloseCircle } from "react-icons/io";
+import {Link} from 'react-scroll'
 
 function Navbar() {
   const [menu, setMenu] = useState(false)
@@ -42,7 +43,15 @@ function Navbar() {
             <ul className='hidden md:flex space-x-8'>
               {
                 navItems.map(({id,text}) => (
-                  <li key={id} className='hover:scale-105 duration-200 cursor-pointer'>{text}</li>
+                  <li key={id} className='hover:scale-105 duration-200 cursor-pointer'>
+                    <Link to={text} 
+                    smooth = {true}
+                    duration={500}
+                    offset={-70}
+                    activeClass='active'
+                    >{text}</Link>
+                    
+                    </li>
                 ))
 
               }

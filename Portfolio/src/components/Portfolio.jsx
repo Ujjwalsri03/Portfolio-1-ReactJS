@@ -9,6 +9,8 @@ import java from '../assets/java.png'
 import js from '../assets/javascript.png'
 import html from '../assets/html (1).png'
 
+
+
 function Portfolio() {
     const cardItem = [
         {
@@ -70,6 +72,8 @@ function Portfolio() {
             ))}
         </div>
         </div>
+        <br />
+        <hr />  
     </div>
     );
 }
