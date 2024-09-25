@@ -5,6 +5,8 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa6";
+
+
 function Footer() {
   return (
     <>
